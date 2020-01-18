@@ -1,0 +1,21 @@
+{% extends "classai/base.html" %}
+{% block title %}推定結果{% endblock %}
+
+{% block content %}
+<div class="result">
+  <h4 class="mt-4 mb-5 boder-bottom">画像推定結果</h4>
+  <table class="table">
+      <p class="body-wrapper">ファイル名:{{photo_name}}</p>
+
+      <img class="preview-img" src={{photo_data}}></img>
+
+      <p class="result">動物名:{{predicted}}</p>
+      <p class="result">推定確率:{{percentage}} %</p>
+
+  </table>
+  <br>
+
+  <a href="{% url 'classai:index' %}" class="btn btn-primary btn-lg btn-block">選択メニューに戻る</a>
+
+</div>
+{% endblock %}
