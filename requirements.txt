@@ -5,7 +5,7 @@ beautifulsoup4==4.8.1
 cachetools==3.1.1
 certifi==2019.11.28
 chardet==3.0.4
-Django==3.0
+Django==3.1.12
 django-bootstrap4==1.1.1
 gast==0.2.2
 google-auth==1.9.0
